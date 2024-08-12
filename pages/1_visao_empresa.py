@@ -8,7 +8,12 @@ from streamlit_folium import st_folium
 
 
 file_ = "data/train.csv"
-df = pd.read_csv(file_)
+try:
+    df = pd.read_csv(file_)
+except FileNotFoundError:
+    st.error("Arquivo não encontrado! Verifique o caminho.")
+except Exception as e:
+    st.error(f"Erro ao carregar o arquivo: {e}")
 #___________________________________________
 #funçoes
 #___________________________________________
