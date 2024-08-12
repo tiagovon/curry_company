@@ -8,7 +8,7 @@ import folium
 from streamlit_folium import st_folium
 
 
-file_ = "dataset/train.csv"
+file_ = "train.csv"
 df = pd.read_csv(file_)
 #___________________________________________
 #funçaoes 
