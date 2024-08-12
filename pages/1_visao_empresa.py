@@ -7,7 +7,7 @@ import folium
 from streamlit_folium import st_folium
 
 
-file_ = "C:\\Users\\Tiago\\OneDrive\\Documentos\\repos\\ftc_progama\\dataset\\train.csv"
+file_ ="dataset/train.csv"
 df = pd.read_csv(file_)
 #___________________________________________
 #funçoes
