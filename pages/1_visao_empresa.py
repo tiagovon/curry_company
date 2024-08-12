@@ -7,7 +7,7 @@ import folium
 from streamlit_folium import st_folium
 
 
-file_ = "data/train.csv"
+file_ = "train.csv"
 try:
     df = pd.read_csv(file_)
 except FileNotFoundError:
